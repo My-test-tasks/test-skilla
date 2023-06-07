@@ -1,0 +1,65 @@
+@import '@styles/colors.scss';
+
+.menu {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  color: $menu-text;
+  background: $menu-bg;
+}
+
+.logo {
+  padding: 20px 0 30px 12px;
+}
+
+.list {
+  margin-bottom: 64px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0 14px 12px;
+
+  &.active {
+    box-shadow: 3px 0 0 $menu-active-border inset;
+    background-color: $menu-active-bg;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+
+    &:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      right: calc(100% - 240px + 12px);
+      border-radius: 50%;
+      background-color: $menu-active-dot;
+      box-shadow: 0px 3px 8px rgba(237, 218, 1, 0.5);
+    }
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.title {
+  font-family: 'SFPD-Medium', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button {
+  margin: 0 auto 32px;
+}
