@@ -1,0 +1,69 @@
+@import '@styles/colors.scss';
+
+.button {
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  &.normal {
+    width: 200px;
+    height: 48px;
+    font-family: 'SFPD-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 148%;
+  }
+
+  &.small {
+    width: 122px;
+    height: 40px;
+    font-family: 'SFPD-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary {
+  background-color: $button-default;
+  color: $white;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+}
+
+.secondary {
+  background-color: $white;
+  border: 1px solid $button-default;
+  color: $button-default;
+
+  &:hover {
+    background-color: $button-hover;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 1px solid $button-active;
+    color: $button-active;
+  }
+}
+
+.light {
+  background-color: $white;
+  color: $button-default;
+
+  &:hover {
+    color: $button-hover;
+  }
+
+  &:active {
+    color: $button-active;
+  }
+}
