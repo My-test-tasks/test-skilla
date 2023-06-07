@@ -9,13 +9,13 @@ export enum ButtonWithIconTypes {
 }
 
 type ButtonWithIconProps = {
-  type?: ButtonWithIconTypes;
+  variant?: ButtonWithIconTypes;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const ButtonWithIcon: FC<ButtonWithIconProps> = ({ type = ButtonWithIconTypes.add, ...attributes }) => {
-  attributes.className += ` ${styles.button} ${styles[type]}`;
+const ButtonWithIcon: FC<ButtonWithIconProps> = ({ variant = ButtonWithIconTypes.add, ...attributes }) => {
+  attributes.className += ` ${styles.button} ${styles[variant]}`;
 
-  const isAdd = type === ButtonWithIconTypes.add;
+  const isAdd = variant === ButtonWithIconTypes.add;
   const text = isAdd ? 'Добавить заказ' : 'Оплата';
   const icon = isAdd ? addIcon : payIcon;
 

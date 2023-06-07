@@ -12,18 +12,18 @@ export enum ButtonSizes {
 }
 
 type ButtonProps = PropsWithChildren<{
-  type?: ButtonTypes;
+  variant?: ButtonTypes;
   size?: ButtonSizes;
 }> &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button: FC<ButtonProps> = ({
-  type = ButtonTypes.primary,
+  variant = ButtonTypes.primary,
   size = ButtonSizes.normal,
   children,
   ...attributes
 }) => {
-  attributes.className += ` ${styles.button} ${styles[type]} ${styles[size]}`;
+  attributes.className += ` ${styles.button} ${styles[variant]} ${styles[size]}`;
 
   return <button {...attributes}>{children}</button>;
 };

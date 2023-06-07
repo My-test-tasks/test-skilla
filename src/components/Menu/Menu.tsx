@@ -71,9 +71,9 @@ const Menu = () => {
         </div>
       </div>
 
-      <ButtonWithIcon type={ButtonWithIconTypes.add} className={styles.button} />
+      <ButtonWithIcon variant={ButtonWithIconTypes.add} className={styles.button} />
 
-      <ButtonWithIcon type={ButtonWithIconTypes.pay} className={styles.button} />
+      <ButtonWithIcon variant={ButtonWithIconTypes.pay} className={styles.button} />
     </aside>
   );
 };
