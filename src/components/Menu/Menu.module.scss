@@ -1,7 +1,7 @@
 @import '@styles/colors.scss';
 
 .menu {
-  width: 240px;
+  min-width: 240px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -28,7 +28,13 @@
   gap: 12px;
   padding: 14px 0 14px 12px;
 
+  &:hover {
+    cursor: pointer;
+    box-shadow: 3px 0 0 $menu-active-border inset;
+  }
+
   &.active {
+    cursor: default;
     box-shadow: 3px 0 0 $menu-active-border inset;
     background-color: $menu-active-bg;
     font-weight: 500;
