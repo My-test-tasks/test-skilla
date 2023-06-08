@@ -1,0 +1,17 @@
+@import '@styles/colors.scss';
+@import '@styles/colors.scss';
+
+.organizations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-size: 15px;
+  line-height: 140%;
+  color: $header-text;
+}
+
+.search {
+  margin-right: 60px;
+}
