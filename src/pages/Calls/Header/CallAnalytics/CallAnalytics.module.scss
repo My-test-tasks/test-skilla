@@ -1,0 +1,79 @@
+@import '@styles/colors.scss';
+
+.analytics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin-right: 200px;
+}
+
+.block {
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+}
+
+.green {
+  color: $bar-green;
+
+  &.bar::-webkit-progress-value {
+    background-color: $bar-green;
+  }
+
+  &.bar::-moz-progress-bar {
+    background-color: $bar-green;
+  }
+}
+
+.yellow {
+  color: $bar-yellow;
+
+  &.bar::-webkit-progress-value {
+    background-color: $bar-yellow;
+  }
+
+  &.bar::-moz-progress-bar {
+    background-color: $bar-yellow;
+  }
+}
+
+.red {
+  color: $bar-red;
+
+  &.bar::-webkit-progress-value {
+    background-color: $bar-red;
+  }
+
+  &.bar::-moz-progress-bar {
+    background-color: $bar-red;
+  }
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 12px;
+  background-color: $bar-bg;
+}
+
+.bar::-webkit-progress-bar {
+  background-color: $bar-bg;
+  border-radius: 12px;
+}
+
+.bar::-webkit-progress-value {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.bar::-moz-progress-bar {
+  background-color: $bar-bg;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
