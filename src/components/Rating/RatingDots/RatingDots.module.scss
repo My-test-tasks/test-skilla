@@ -1,0 +1,27 @@
+@import '@styles/colors';
+
+.dots {
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  &.bad {
+    background-color: $red;
+  }
+
+  &.good {
+    background-color: $light-blue;
+  }
+
+  &.excellent {
+    background-color: $green;
+  }
+}
