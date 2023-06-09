@@ -1,0 +1,11 @@
+@import '@styles/colors';
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 148%;
+  color: $header-text;
+}
