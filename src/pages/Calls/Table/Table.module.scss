@@ -1,0 +1,44 @@
+@import '@styles/colors';
+
+.table {
+  width: 1440px;
+  box-shadow: 0px 4px 5px $header-shadow;
+  border-radius: 8px;
+  background-color: $white;
+  margin-bottom: 546px;
+
+  & tbody tr:hover {
+    cursor: pointer;
+    border-top: 1px solid $date-select-border;
+    border-bottom: 1px solid $date-select-border;
+    background-color: $table-row-hover-bg;
+  }
+
+  & td,
+  & th {
+    border-top: 1px solid $date-select-border;
+    padding: 24px 0 20px;
+  }
+
+  & td:first-child,
+  & th:first-child {
+    border: none;
+    padding: 24px 0 20px 12px;
+  }
+
+  & td:last-child,
+  & th:last-child {
+    text-align: end;
+    padding: 24px 40px 20px 0;
+  }
+
+  & td,
+  & th {
+    text-align: start;
+    vertical-align: middle;
+  }
+
+  & tfoot {
+    height: 57px;
+  }
+}
