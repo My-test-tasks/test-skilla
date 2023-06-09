@@ -1,5 +1,6 @@
-import BallanceBar from './BallanceBar';
 import Header from './Header';
+import BallanceBar from './BallanceBar';
+import FilterBar from './FilterBar';
 import styles from './Calls.module.scss';
 
 const Calls = () => {
@@ -7,6 +8,7 @@ const Calls = () => {
     <div className={styles.calls}>
       <Header />
       <BallanceBar />
+      <FilterBar />
     </div>
   );
 };
