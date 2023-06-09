@@ -19,38 +19,38 @@
 }
 
 .green {
-  color: $bar-green;
+  color: $green;
 
   &.bar::-webkit-progress-value {
-    background-color: $bar-green;
+    background-color: $green;
   }
 
   &.bar::-moz-progress-bar {
-    background-color: $bar-green;
+    background-color: $green;
   }
 }
 
 .yellow {
-  color: $bar-yellow;
+  color: $yellow;
 
   &.bar::-webkit-progress-value {
-    background-color: $bar-yellow;
+    background-color: $yellow;
   }
 
   &.bar::-moz-progress-bar {
-    background-color: $bar-yellow;
+    background-color: $yellow;
   }
 }
 
 .red {
-  color: $bar-red;
+  color: $red;
 
   &.bar::-webkit-progress-value {
-    background-color: $bar-red;
+    background-color: $red;
   }
 
   &.bar::-moz-progress-bar {
-    background-color: $bar-red;
+    background-color: $red;
   }
 }
 

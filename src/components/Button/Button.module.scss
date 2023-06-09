@@ -26,7 +26,7 @@
 }
 
 .primary {
-  background-color: $button-default;
+  background-color: $blue;
   color: $white;
 
   &:hover {
@@ -40,8 +40,8 @@
 
 .secondary {
   background-color: $white;
-  border: 1px solid $button-default;
-  color: $button-default;
+  border: 1px solid $blue;
+  color: $blue;
 
   &:hover {
     background-color: $button-hover;
@@ -57,7 +57,7 @@
 
 .light {
   background-color: $white;
-  color: $button-default;
+  color: $blue;
 
   &:hover {
     color: $button-hover;

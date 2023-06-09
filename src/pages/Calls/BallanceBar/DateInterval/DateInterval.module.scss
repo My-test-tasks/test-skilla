@@ -23,7 +23,7 @@
     cursor: pointer;
 
     & path {
-      fill: $button-default;
+      fill: $blue;
     }
   }
 }
@@ -34,13 +34,13 @@
   gap: 6px;
   font-size: 14px;
   line-height: 16px;
-  color: $button-default;
+  color: $blue;
 
   &:hover {
     cursor: pointer;
 
     & .icon path {
-      fill: $button-default;
+      fill: $blue;
     }
   }
 }
