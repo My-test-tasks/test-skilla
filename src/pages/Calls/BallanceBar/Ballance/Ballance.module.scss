@@ -1,0 +1,50 @@
+@import '@styles/colors';
+
+.ballance {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background: $white;
+  border-radius: 48px;
+  font-size: 14px;
+  line-height: 148%;
+  color: $header-text;
+
+  &:hover {
+    cursor: pointer;
+
+    & .sum {
+      color: $button-hover;
+    }
+
+    & .icon path {
+      fill: $button-hover;
+      fill-opacity: 1;
+    }
+  }
+
+  &:active {
+    & .sum {
+      color: $table-text-dark;
+    }
+
+    & .icon path {
+      fill: $button-active;
+      fill-opacity: 1;
+    }
+  }
+}
+
+.sum {
+  color: $table-text-dark;
+}
+
+.icon {
+  & path {
+    fill: $button-default;
+    fill-opacity: 1;
+  }
+}
