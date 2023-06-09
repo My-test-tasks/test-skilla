@@ -11,7 +11,7 @@ const CellType: FC<CellTypeProps> = ({ in_out: type }) => {
 
   switch (type) {
     case 0:
-      icon = call_03;
+      icon = call_02;
       break;
 
     case 1:
@@ -19,7 +19,7 @@ const CellType: FC<CellTypeProps> = ({ in_out: type }) => {
       break;
 
     default:
-      icon = call_02;
+      icon = call_03;
       break;
   }
 
