@@ -1,0 +1,17 @@
+@import '@styles/colors.scss';
+
+.cell {
+  width: 40px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid $light-blue;
+  border-radius: 2px;
+  appearance: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

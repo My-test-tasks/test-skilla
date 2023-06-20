@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { ICall } from '@store/calls/types';
 import CellCheckbox from '../TableCell/CellCheckbox/CellCheckbox';
 import CellType from '../TableCell/CellType/CellType';
@@ -14,15 +14,25 @@ type TableRowProps = {
 };
 
 const TableRow: FC<TableRowProps> = ({ call }) => {
+  const [isHover, setIsHover] = useState(false);
+
+  const mouseEnterHandler = () => {
+    setIsHover(true);
+  };
+
+  const mouseLeaveHandler = () => {
+    setIsHover(false);
+  };
+
   return (
-    <tr key={call.id}>
-      <CellCheckbox />
+    <tr key={call.id} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
+      <CellCheckbox checkbox={isHover} />
       <CellType in_out={call.in_out} />
       <CellTime date={call.date} />
-      <CellOperator />
+      <CellOperator id={call.id} />
       <CellCall to_number={call.from_number} />
       <CellSource source={call.source} />
-      <CellRating errors={call.errors} />
+      <CellRating id={call.id} errors={call.errors} />
       <CellDuration time={call.time} record={call.record} />
     </tr>
   );

@@ -7,6 +7,18 @@
   background-color: $white;
   margin-bottom: 546px;
 
+  & thead {
+    height: 66px;
+  }
+
+  & th:first-child input[type='checkbox'] {
+    display: none;
+  }
+
+  &:has(tbody tr td:first-child input[type='checkbox']) > thead tr th:first-child input[type='checkbox'] {
+    display: block;
+  }
+
   & tbody tr:hover {
     cursor: pointer;
     border-top: 1px solid $date-select-border;
@@ -22,8 +34,10 @@
 
   & td:first-child,
   & th:first-child {
+    width: 47px;
+    height: 66px;
     border: none;
-    padding: 24px 0 20px 12px;
+    padding: 24px 12px 20px;
   }
 
   & td:last-child,

@@ -33,8 +33,8 @@ const RatingDots: FC<RatingDotsProps> = ({ rating }) => {
     <div className={styles.dots}>
       {Array(count)
         .fill(0)
-        .map(() => (
-          <div className={dotStyle}></div>
+        .map((_, index) => (
+          <div key={index} className={dotStyle}></div>
         ))}
     </div>
   );
