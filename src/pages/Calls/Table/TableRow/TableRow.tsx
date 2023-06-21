@@ -33,7 +33,7 @@ const TableRow: FC<TableRowProps> = ({ call }) => {
       <CellCall to_number={call.from_number} />
       <CellSource source={call.source} />
       <CellRating id={call.id} errors={call.errors} />
-      <CellDuration time={call.time} record={call.record} />
+      <CellDuration time={call.time} record={call.record} showPlayer={isHover} />
     </tr>
   );
 };
