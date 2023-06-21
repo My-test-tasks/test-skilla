@@ -9,7 +9,7 @@ const config = {
   headers: { Authorization: `Bearer ${API_TOKEN}` },
 };
 
-const getCalls = () => axios.post<CallsResponse>(`${API_URL}`, {}, config);
+const getCalls = () => axios.post<CallsResponse>(`${API_URL}/getList`, {}, config);
 
 function* fetchCallsSaga() {
   try {
