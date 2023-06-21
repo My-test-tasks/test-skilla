@@ -19,11 +19,16 @@
     display: block;
   }
 
-  & tbody tr:hover {
-    cursor: pointer;
-    border-top: 1px solid $date-select-border;
-    border-bottom: 1px solid $date-select-border;
-    background-color: $table-row-hover-bg;
+  & tbody tr {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      cursor: pointer;
+      border-top: 1px solid $date-select-border;
+      border-bottom: 1px solid $date-select-border;
+      background-color: $table-row-hover-bg;
+    }
   }
 
   & td,
@@ -34,16 +39,20 @@
 
   & td:first-child,
   & th:first-child {
-    width: 47px;
     height: 66px;
     border: none;
+
     padding: 24px 12px 20px;
+
+    & input {
+      margin: 0;
+    }
   }
 
   & td:last-child,
   & th:last-child {
     text-align: end;
-    padding: 24px 40px 20px 0;
+    padding: 9px 40px 8px 0;
   }
 
   & td,
@@ -55,4 +64,36 @@
   & tfoot {
     height: 57px;
   }
+}
+
+.column-1 {
+  width: 47px;
+}
+
+.column-2 {
+  width: 53px;
+}
+
+.column-3 {
+  width: 89px;
+}
+
+.column-4 {
+  width: 128px;
+}
+
+.column-5 {
+  width: 316x;
+}
+
+.column-6 {
+  width: 210px;
+}
+
+.column-7 {
+  width: 190px;
+}
+
+.column-8 {
+  width: 400px;
 }
